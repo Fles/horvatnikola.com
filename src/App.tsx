@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${push2})` }}>
-      <div className="content"></div>
+      <div className="content">horvatnikola.com</div>
     </div>
   );
 }
