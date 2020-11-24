@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        <h5>horvatnikola.com</h5>
+        <p>horvatnikola.com</p>
         Under <del>pressure</del> construction!
       </div>
     </div>
