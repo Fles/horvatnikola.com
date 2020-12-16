@@ -1,25 +1,13 @@
-html,
 body {
   height: 100%;
+  background: black;
+}
+#root {
+  height: 100%;
+  background: black;
 }
 
 .App {
+  font-size: 0.64em;
   text-align: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: cadetblue;
-}
-.content {
-  height: 1900px;
-  width: 100%;
-  display: block;
-  font-size: 2em;
-  color: #7decfb;
-  line-height: 12em;
-}
-
-.App-link {
-  color: #61dafb;
 }
