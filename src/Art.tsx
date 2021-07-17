@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
+
 function Art() {
+  const ref = useRef<HTMLPreElement>(null);
+  useLayoutEffect(() => {
+    if (!!ref.current) {
+      [...ref.current?.children].forEach((e) => {
+        const original = e.textContent;
+        if (original) {
+          const changed = original.replace(/1/g, "░").replace(/0/g, "▒");
+          e.textContent = changed;
+        }
+      });
+    }
+  });
   return (
     <div style={{ background: "#000000", letterSpacing: "3px" }}>
-      <pre>
+      <pre ref={ref}>
         <span />
         <span style={{ color: "#ffffff" }}>
           11111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111
@@ -827,16 +840,7 @@ function Art() {
         <span style={{ color: "#ffff00" }}>00</span>
         <span style={{ color: "#ff0000" }}>11111</span>
         <span style={{ color: "#ffff00" }}>1</span>
-        <span style={{ color: "#ff0000" }}>
-          11111111
-          <a
-            href="./home"
-            style={{ color: "#inherit", textDecoration: "none" }}
-          >
-            π
-          </a>
-          1
-        </span>
+        <span style={{ color: "#ff0000" }}>1111111111</span>
         <span style={{ color: "#ffff00" }}>1</span>
         <span style={{ color: "#00ff00" }}>11111</span>
         <span style={{ color: "#ffff00" }}>1</span>
