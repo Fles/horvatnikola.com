@@ -10,4 +10,53 @@ body {
 .App {
   font-size: 0.64em;
   text-align: center;
+  background: black;
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    font-size: 0.3em;
+  }
+  .art span {
+    position: relative;
+    left: -50vh;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .App {
+    font-size: 0.52em;
+  }
+  .art span {
+    position: relative;
+    left: -50vh;
+  }
+}
+
+.art {
+  letter-spacing: 3px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.yellow {
+  color: #ffff00;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.lightblue {
+  color: #00ffff;
+}
+
+.blue {
+  color: #0000ff;
 }
